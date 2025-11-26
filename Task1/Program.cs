@@ -1,10 +1,20 @@
-﻿namespace Task1
+﻿class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        // Create BankAccount object
+        BankAccount account = new BankAccount("ACC12345", 5000);
+
+        // Display account number
+        Console.WriteLine("Account Number: " + account.AccountNumber);
+
+        // Deposit money
+        account.Deposit(3000);
+
+        // Withdraw money
+        account.Withdraw(2500);
+
+        // Print remaining balance
+        Console.WriteLine("Remaining Balance: " + account.Balance);
     }
 }
