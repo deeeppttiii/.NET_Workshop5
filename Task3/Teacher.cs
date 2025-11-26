@@ -13,8 +13,8 @@ public class Teacher
     }
 
     // This method CANNOT be overridden
-    public void SalaryInfo()
-    {
-        Console.WriteLine("Teacher salary is confidential.");
-    }
+    //public sealed void SalaryInfo()
+    //{
+    //    Console.WriteLine("Teacher salary is confidential.");
+    //}
 }
